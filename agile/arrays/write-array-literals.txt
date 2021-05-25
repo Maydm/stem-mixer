@@ -1,0 +1,47 @@
+We can also write arrays as array literals. In this manner, we can declare and define
+arrays in a single line. This can be a more effecient way of writing arrays if you 
+know all the values to begin with.
+
+Remember, the length of an array cannot be changed once defined, but the values inside
+of the array can be changed.
+
+Practice by typing out the code below.
+
+public class DeclareArrayLiterals {
+    public static void main(String[] args) {
+
+        String[] cities = {"Madison, Milwaukee, Green Bay"};
+        // This array holds three strings.
+
+        // Now let's write an array of integers
+        int[] numbers = {1, 2, 4, 8, 16, 32, 64, 128};
+
+        // Access elements in an array with bracket notation
+        System.out.println(cities[0]);
+        System.out.println(cities[2]);
+
+        // TODO: Access the first, second, and last elements in the array "numbers"
+
+
+        // Let's change the values in the arrays
+        cities[0] = "Chicago";
+        cities[1] = "St. Paul";
+        // TODO: Change the third element to a new city in the cities array.
+
+        // TODO: Change the third, fourth, and fifth elements in the numbers array.
+
+
+    }
+}
+
+
+ What now? 
+
+
+ What happens if you try to place a string in the numbers array?
+
+ What will happen if you place an integer in the strings array?
+
+ What about adding a double or a float to the numbers array?
+
+ Write your own array in this new way. 

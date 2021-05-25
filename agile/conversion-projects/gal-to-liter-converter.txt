@@ -1,0 +1,47 @@
+You've had quite a bit of practice thinking through how to build conversion
+recipies for temperatures and measurements of distance. Those programs asked
+for user inputs. We can also use Java to build tables. So rather than asking 
+a user for a specific value, we can create a program that will automatically
+print a given range of values.
+
+Rather than giving you the code outright this time, you'll need to think
+about the program requirements and how you'll structure the program.
+
+Here's a few things you should know. 
+
+1) This program will look similiar to the FtoCeLooper
+2) We'll need variables for Gallons and Liters
+3) Since we are looping we'll need a counter variable
+4) You'll need a for loop and an if statement inside of that loop such
+   that an empty line is printed every 10th line. This will make the output
+   easier to read.
+5) You should also know that you should have fun with this! If you start
+   to feel very frustrated take a short break.
+6) It's OK to Google for help. That's part of being a developer.
+7) It's also OK to look at the FtoCeLooper, but try to think about this new
+   program for a few mintues before you go right to it.
+   
+
+Good luck!!
+
+   
+Did you finish? Great work!! So...
+
+   
+What now?
+
+1) Could you refactor the code to ask the user for the range of gallons they'd
+like to convert to liters? What would be required to make that happen?
+Think about it for a moment...
+
+First thing, we'd want to import the Scanner class. What else?
+Create new variables for the keyboard inputs...
+Then use those variables, but where?
+In the loop would be a good place to use them, right...
+
+Gather your thoughts together in your notebook or journal and then let's do this!
+
+2) Build a new and similar program that converts Liters to Gallons from 1L to 100L
+using a for loop.
+
+3) Refactor the Liters to Gallons converter to ask the user for their desired range.

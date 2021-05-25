@@ -1,0 +1,42 @@
+Let's concatenate a few strings together. To concatenate
+a string use the "+" sign. Create a new java file and we'll
+recreate the example in the slide.
+
+public class IntroToConcatenation {
+    public static void main(String[] args) {
+        String concatenateString = "2" + "2";
+        System.out.println(concatenateString);
+    }
+}
+
+We can see that concatenation is different than
+adding because if we treated the "2"s like integers
+than 2 + 2 would return 4.
+
+When we concatenate as string "2" + "2" returns 22.
+
+Let's add to the IntroToConcatenation class.
+
+public class IntroToConcatenation {
+    public static void main(String[] args) {
+        String concatenateString = "2" + "2";
+        System.out.println(concatenateString);
+
+        String makeAPhrase = "made" + " " + "by" + " " + "them";
+        String maydm = "Maydm" + " " + "is";
+        String end = "I" + " " + "made" + " " + "this" + " " + "with" + " " + "Maydm!";
+
+        System.out.println(maydm);
+        System.out.print(makeAPhrase);
+        System.out.print("\n");
+        System.out.print(end);
+    }
+}
+
+What now?
+
+What happens if you comment out the 
+print statement containing "\n"?
+
+Make your own concatenation statement
+and print it. 

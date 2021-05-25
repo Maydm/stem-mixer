@@ -1,0 +1,45 @@
+Our next loop will incorporate string concatenation
+and a multiplication operation. If I asked you to write
+out all the square products of the numbers one through
+any given number (let's say 12), how long would it take you?
+How long might it take you to write a program to do
+the work for you? 
+And how long would it take to run that program at any 
+point in the future?
+
+Let's find out...
+
+import java.util.Scanner;
+
+public class LoopSquares {
+    public static void main(String[] args) {
+        Scanner keyboard = new Scanner(System.in);
+        int count;
+
+        System.out.println( "Let's print the squares.");
+        for (count = 1; count <= 12; count++) {
+            System.out.println( "The square of " + count + " is " + (count * count));
+        }
+    }
+}
+
+Now what?
+
+You can start to see how loops can make quick work of 
+repetitive tasks. In the blink of an eye the computer
+can return several mathematical equations.
+Of course, there are limits to what a computer can
+compute, but these numbers are so large, that the 
+limitations are hardly worth mentioning at this point
+in your progression toward becoming a developer.
+
+That said, remember that computer are (for now at least) 
+dumb machines that only do what their programmers tell
+them to do. You have creativity and imagination on your
+side.
+
+Play with the conditions of this loop. Can you print
+every other square product up to 100?
+
+Can you change the operation inside the loop so that
+it returns the cubed product rather than the square product?

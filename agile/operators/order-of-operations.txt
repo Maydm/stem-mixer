@@ -1,0 +1,32 @@
+There's no better way to find out how a program might behave
+than to play with it and see what happens when we write
+our code in slightly different ways.
+
+Coding is NOT for the stodgy and overly catious. It 
+requires creativity and a willingness to fail and learn
+from one's mistakes. (Be catious when it comes to user
+safety and when you're asked to violate good ethics,
+but be bold when educating yourself).
+
+public class OrderOfOperations {
+    public static void main(String[] args) {
+        int x = 4;
+        int result = x++ / 2 + 3 * 3 - 1 / 2;
+        System.out.println(result);
+        int secondResult = x++ / 2 + 3 * (3 - 1) / 2;
+        System.out.println(secondResult);
+        int y = 6;
+        int answer = y-- * 4 % 3 + 6 / 2;
+        System.out.println(answer);
+        int secondAnswer = y-- * 4 % 3 + (6 / 2);
+        System.out.println(secondAnswer);
+    }
+}
+
+What now?
+
+Write your own expression using a variety of order of operations.
+What's the result of your work? Do you always receive the 
+same output or is it different based on how operations are ordered?
+What does the answer to this question imply about
+programming larger projects?

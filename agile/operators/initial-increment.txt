@@ -1,0 +1,23 @@
+Let's observe and practice different methods to increment
+a value.
+
+public class InitialIncrement {
+    public static void main( String[] args) {
+        int x, y;
+        x = 1;
+        System.out.println("x = " + x);
+        x++;
+        System.out.println("x++ = " + x);
+        y = 1;
+        System.out.println("y = " + y);
+        y = y + 1;
+        System.out.println("y = y + 1 = " + y);
+    }
+}
+
+What now?
+
+Write your own incremental statement. 
+Pay close attention to capital letters and proper spelling.
+Remember, it's often small mistakes that create bugs
+in our programs. 

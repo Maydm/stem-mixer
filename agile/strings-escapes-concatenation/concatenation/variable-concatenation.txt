@@ -1,0 +1,27 @@
+Let's concatenate with variables and operators to store
+concatenated phrases inside variables and then print the statement
+
+Create a new Java file and type out the program below.
+
+public class StringConcatenater {
+    public static void main(String[] args) {
+        String words, moreWords;
+        words = "";
+        moreWords = "";
+
+        words = words + "tom ";
+        words = words + "purple ";
+        words = words + "greece ";
+        System.out.println(words);
+
+        moreWords += "time ";
+        moreWords += "check ";
+        moreWords += "lobby ";
+        System.out.println(moreWords);
+    }
+}
+
+What now?
+
+Create your own concatenated pharse by using variables and operators
+as we have done above.

@@ -1,0 +1,82 @@
+Let's write our first method!
+
+Create a new Java file and start with the opening statements:
+
+public class minFunction {
+    public static void main (String[] args) {
+        // Do stuff in here
+    }
+}
+
+At this point, we are very familiar with how to open a Java file. Nothing new here.
+However, we're about to do a new thing in this file. In the past, we've always 
+created program statements INSIDE of the "public static void main" method.
+
+But, did you know that we can have more than one "public static" type method in a single
+Java file? You absolutely can, and if you're guessing that we'll create our first method
+in one of these new public methods then you're absolutely correct. (Why else would
+we be talking about it, right?).
+
+So let's create that new method. remember, you'll begin this new method inbetween the
+two closing curly braces.
+
+This will be the same method we saw in the slideshow:
+
+public static int minFunction(int n1, int n2) {
+    int min;
+    if (n1 > n2)
+        min = n2;
+    else
+        min = n1;
+
+    return min;
+}
+
+OK, so we have a method, your first ever homemade method, in fact! 
+Nice work. Give yourself a pat on the shoulder.
+Ok, but if you compile and run this program it will not do anything. 
+Why is that? Think about that...
+
+Because we haven't called the function, right. Also, we didn't give
+the method any inputs. So it's there, the computer reads it but
+there's nothing more that the program is instructed to do so we see
+no output.
+
+Let's fix that. Let's define two inputs since this method takes in
+two parameters. We'll also create a third variable to catch and store
+the output of the method. 
+
+The next set of statements will go inside the first method. The 
+"public static void main" method that we've wrote at least a dozen
+times for all of our other programs so far.
+
+int a = 6;
+int b = 11;
+int c = minFunction(a, b);
+
+Right on. We're only missing one thing. A println statement to display
+our output. You can handle that part.
+
+Once complete compile and and run. Play with the inputs. What if you 
+name the inputs something other than a and b? (Just be sure to change
+all the a's and all the b's or you'll have buggy code).
+
+Here's the minFunction program in totality:
+
+public class minFunction {
+    public static void main (String[] args) {
+        int a = 6;
+        int b = 11;
+        int c = minFunction(a, b);
+        System.out.println("Minimum Value = " + c);
+    }
+    public static int minFunction(int n1, int n2) {
+        int min;
+        if (n1 > n2)
+            min = n2;
+        else
+            min = n1;
+    
+        return min;
+    }
+}

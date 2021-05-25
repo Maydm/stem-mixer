@@ -1,0 +1,59 @@
+First Java Excercise
+
+Throughout the course of this program never copy and paste! Copy and paste when
+someone is paying you to code for them. Until then, type out everything to 
+ensure successful learning!
+
+As you code, you will inevitably run into errors. That's part of the learning
+process for all developers. Write down those error statements and your solution 
+to the error for a quick future reference and to help you avoid making that
+same mistake again in the future, and to become a better programmer faster.
+Do this everyday for every error that you receive.
+
+Oftentimes in programming, moving fast is actually slow. (what do you suppose
+    that means? Keep it in the back of your head as you progress through
+    this program and you'll likely discover the answer).
+
+To write your first Java progam open Git Bash and cd into your development folder.
+$ touch MyFirstProgram.java
+$ code MyFirstProgram.java
+This will open Visual Studio. Begin.
+The alternative method is to open Visual Studio directly, begin working and then save.
+
+/*
+  Anything inside here is a comment.
+  The computer ignores anything here.
+ */
+ 
+ class MyFirstProgram {
+     public static void main(String args[]) {
+         System.out.println("I, JP Miller, am determined to become an Android Developer.");
+         System.out.println("This is my first step toward achieving that goal.");
+         System.out.println("Today is March 3, 2019.");
+     }
+ }
+ 
+// Hello students. Remember, don't copy and paste! Not even from this file. 
+// If you are receiving errors double check spelling and capitalization. 
+// Computers are very obedient, they do whatever you tell them to and they
+// have a hard time processing mistakes, even very minor ones like misspelled words.
+ 
+ Once complete follow these instructions:
+ 
+1. Save the file as MyFirstProgram.java
+2. In the terminal, run 
+   $ javac MyFirstProgram.java 
+   to compile the file for java to run
+3. Fix any typos or other mistakes that the compiler finds and repeat step 2.
+4. In the terminal, execute 
+   $ java MyFirstProgram
+5. If errors are encountered check for typos. (Use tab for autocomplete)
+
+What now?
+
+1) Open MyFirstProgram.java and change the name to be your own name. This statement 
+will mean more if you write it to yourself, after all.
+2) Change the date to today's date so you have a record of when you began your 
+journey into Android Development
+3) If you'd like to write anything else to yourself add another System.out.println
+statement and go for it!

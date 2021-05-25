@@ -1,0 +1,66 @@
+Next, we'll build a program called "PrintSubjects"
+
+This uses nested switch statements which means 
+we write a switch inside of another switch.
+You could think of it as a baby kangaroo inside the 
+pouch of a mother kangaroo. 
+
+This first program begins with default switch values. 
+Type the code below, compile, fix errors, run, and then change 
+the values to see what different return results you can create.
+
+
+class PrintSubjects
+{
+    public static void main(String arg[])
+    {
+        char branch = 'M'; // C - CSE, E - ECE, M - Mech // Edit the character to see different options
+        int year = 3; // Edit the year for different options
+        
+        switch( year )
+        {
+            case 1:
+                System.out.println("English, Maths, Drawing");
+                break;
+            case 2:
+                switch( branch ) // LINE C
+                {
+                    case 'C':
+                        System.out.println("Data structures, Java, Computer Organization");
+                        break;
+                    case 'E':
+                        System.out.println("Micro processors, Logic switching theory");
+                        break;
+                    case 'M':
+                        System.out.println("Drawing, Manufacturing Machines");
+                        break;
+                }
+                break;
+            case 3:
+                switch( branch ) // LINE D
+                {
+                    case 'C':
+                        System.out.println("Operating System, RDBMS");
+                        break;
+                    case 'E':
+                        System.out.println("Fundamentals of Logic Design, Microelectronics");
+                        break;
+                    case 'M':
+                        System.out.println("Internal Combustion Engines, Mechanical Vibration");
+                        break;
+                }
+                break;
+            // Add a fourth case with new switch options
+        }
+    
+    }
+}
+
+What's next?
+
+Using this program as a template, write your own nested switch
+statement. The subject can be on sports, video games, school subjects,
+animals or actors or anything that can be categorized and subcategorized.
+
+Avoid copying and pasting. You'll learn faster and more permanently if
+you type the code out yourself.

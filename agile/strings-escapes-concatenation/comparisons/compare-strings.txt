@@ -1,0 +1,35 @@
+Java allows us to compare two strings for equality.
+Let's write a program that allows us to test the equality of a few
+different strings.
+
+Retype the program below into a new java file.
+
+public class CompareStrings {
+    public static void main(String[] args) {
+        String wordOne = "Something different";
+        String wordTwo = "Same";
+        String wordThree = "Same";
+        String wordFour = "SAME";
+
+        System.out.println("Is \"" + wordOne + "\" the same as \"" + wordThree + "\" ?");
+        System.out.println(wordOne.equals(wordTwo));
+        System.out.println("Is \"" + wordTwo + "\" the same as \"" + wordThree + "\" ?");
+        System.out.println(wordTwo.equals(wordThree));
+        System.out.println("Is \"" + wordThree + "\" the same as \"" + wordFour + "\" ?");
+        System.out.println(wordThree.equals(wordFour));
+    }
+}
+
+Notice that in the method statement "wordOne.equals(wordTwo)"
+we are comparing two String variables to one another.
+The first element, that is "wordOne" is our first variable. "equals" is
+the name of the method that we are invoking.
+The last element, "wordTwo" is inside the parenthesis and is being
+compared against the first element, the variable "wordOne".
+
+We could write pseudocode notation as 
+firstVariable.equals(secondVariable);
+
+What now?
+Create your own String variables and write a statement to compare them
+to one another. 

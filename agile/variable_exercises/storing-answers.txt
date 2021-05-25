@@ -1,0 +1,56 @@
+In the previous exercise we asked the user for input on their keyboard. 
+What do you think happened to the answers you supplied the program?
+Were they stored anywhere in memory?
+No! We didn't add any variables, only keyboard input parameters.
+
+Let's enable our next program to store the answers we provide it.
+
+import java.util.Scanner;
+
+public class StoringAnswers {
+    public static void main( String[] args ) {
+        String firstName;
+        String lastName;
+        int age, height, grade;
+        double wages;
+        
+        Scanner keyboard = new Scanner(System.in);
+        
+        System.out.print( "Enter your first name. " );
+        firstName = keyboard.next();
+        
+        System.out.print( "Ok, thank you " + firstName + ". What is your last name? " );
+        lastName = keyboard.next();
+        
+        System.out.print( "So your name is " + firstName + " " + lastName + ". Is that correct? " );
+        keyboard.next();
+        
+        System.out.println( "How old are you " + firstName + " " + lastName + "?" );
+        age = keyboard.nextInt();
+        
+        System.out.println( "How tall are you in inches?" );
+        height = keyboard.nextInt();
+        
+        System.out.print( "Wow! " + height + " inches! Amazing. " );
+        System.out.println( "Ok, what grade will you be in next school year?" );
+        grade = keyboard.nextInt();
+        
+        System.out.print( "Last question. How much money, in dollars and cents, would you like to earn after graduation? " );
+        wages = keyboard.nextDouble();
+        
+        System.out.println( "Keep learning to expand your comfort zone and you just may earn " + wages + "!" );
+    }
+}
+
+This time, after answering the questions, the variables are stored into the program
+so we can reuse them. 
+
+What now?
+
+1) After successfully running the program add a new variable and ask your own question.
+2) How can you break your program by entering incorrect or unexpected primitive types?     
+        
+3) Now that you have experience storing user answers in variables, go back to the 
+ForgetMachine program and fix it so that the program can store user answers with
+appropriately typed variables.
+        

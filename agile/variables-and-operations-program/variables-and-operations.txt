@@ -1,0 +1,86 @@
+If you made it through the previous lesson on operations then you should
+have a solid understanding of how we can use Java to compute mathematical
+operations. Now we'll combine our knowledge of variables, operations and inputs
+to create a program that accepts numbers as an input, calculates operations
+behind the scenes and returns answers, or an output to the user. 
+
+import java.util.Scanner;
+
+public class VarsAndOperations {
+    public static void main( String[] args ) {
+        Scanner keyboard = new Scanner(System.in);
+        int a, b, i, n;
+        double x, y, p, doubleA, doubleB;
+        String first, second, third, name, two, all;
+        
+        System.out.println( "Let's play with numbers!" );
+        System.out.print( "Please provide a whole number (an integer) " );
+        a = keyboard.nextInt();
+        
+        System.out.print( "Thanks! Let me have another integer, please. " );
+        b = keyboard.nextInt();
+        
+        System.out.println( "Awesome. So the first number is " + a );
+        System.out.println( "And the second number is " + b );
+        
+        System.out.println( "So " + a + " plus " + b + " is equal to " + (a + b) );
+        System.out.println( a + " minus " + b + " is equivalent to " + (a - b) );
+        System.out.println( "and the product of " + a + " multiplied by " + b + " equals " + (a * b) );
+        doubleA = a; // We're converting the integer into a variable that can hold a decimal
+        doubleB = b;
+        p = doubleB / doubleA;  // var p is a double which can hold a decimal number
+        System.out.println( b + " divided by " + a + " returns " + (b / a) );
+        System.out.println( "If b/a returned '0' that's because the dividend is less than zero." );
+        System.out.println( "The answer you're looking for is: " + p );
+        
+        System.out.println( "Finally, " + a + " modulus " + b + " outputs " + (a % b) );
+        
+        System.out.println( "That was fun. Let's play with decimals now." );
+        System.out.print( "Offer me any number with a decimal, but keep it to seven digits max. " );
+        x = keyboard.nextDouble();
+        System.out.print( "Great. Now I need one more decimal number. " );
+        y = keyboard.nextDouble();
+        System.out.println( "OK. So we have " + x + " and " + y + ". Let's math!" );
+        
+        System.out.println( x + " plus " + y + " = " + (x + y) );
+        System.out.println( x + " plus " + y + " plus " + a + " = " + (x + y + a) );
+        System.out.println( y + " minus " + b + " = " + (y - b) );
+        System.out.println( x + " times " + y + " minus " + b + " = " + ((x * y) - b) );
+        System.out.println( y + " divided by " + x + " plus " + a + " modulus " + b + " = " + (((y / x) + a) % b) );
+        
+        System.out.println( "That was interesting. Let's play with concatonation now." );
+        System.out.println( "Let's make a new superhero name for you." );
+        System.out.print( "What's your favorite color? " );
+        first = keyboard.next();
+        System.out.print( "What's your favorite season of the year? " );
+        second = keyboard.next();
+        System.out.print( "Enter an adjective. That's a descriptive word such as 'big', 'fast', 'short', or 'silent' " );
+        third = keyboard.next();
+        System.out.print( "Finally, we need a noun. " );
+        name = keyboard.next();
+        
+        System.out.println( "Your new superhero name is: The " + third + " " + first + " " + second + " " + name + "!" );
+        System.out.println( "That's a long name. The short version is " + third + " " + name + "." );
+        
+        System.out.println( "We can make this name easier to return in the future." );
+        all = third + " " + first + " " + second + " " + name;
+        two = third + " " + name;
+        
+        System.out.println( "Now when you want to use your full name call the variable all: " + all );
+        System.out.println( "Or call variable two for the nickname: " + two );
+    }
+}
+
+
+Wow! That was a lot. Pat yourself on the back once you've successfully complied and ran the code.
+Your brain may be tired now, and it has worked hard. You should have learned quite a bit here about
+how we can string operations together and concatonate words. You even converted an integer to a double!
+
+Now that you've conquered this, what would happen if you concatonated without the " " spaces inbetween the
+superhero names? Let's try it and see.
+
+What would happen if we concatonated the integer and double variables? Let's try that too.
+
+What if we ignore the computer instructions and use numbers instead of letters for the superhero name?
+
+

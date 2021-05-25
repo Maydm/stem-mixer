@@ -1,0 +1,69 @@
+If statements help developers write conditional statements.
+That means we will ask the computer to do something when 
+something else happens or if something is true or false.
+
+Remember booleans? We use booleans quite a bit with 
+if statements. 
+
+You probably use conditionals every day in your own life,
+whether you think of them or not. Consider your thoughts 
+while you were trying to leave the house today.
+
+What were some steps you needed to complete before you 
+could go out-of-doors?
+
+You probably needed to get dressed, perhaps take a shower
+(the person sitting next to you hopes so!), brush your 
+teeth and maybe have a little breakfast. Then you needed
+to put on your shoes. And all of these individual actions 
+have their own conditionals. 
+
+Take tying your shoes, for example. Before you can tie your
+shoes you need to put them on your feet. Before you can put 
+them on your feet you may have needed to untie them, first.
+If you kicked them off your feet before untying them the 
+previous night. Then, finally, once your shoes are on
+your feet and can tie them. To tie your shoes, you execute
+an algorithm that you memorized as a child, but we may
+be getting ahead of ourselves.
+
+Finally, once you've met all the conditions for leaving the 
+house you can execute your "walk out the door" algorithm.
+
+Before we write anything that complicated, we'll start with
+very simple conditionals that check if two numbers are
+equal, less than or greater than. 
+
+Let's build our first if statement.
+
+Create a new java file and type the following program. Then
+compile, fix any mistakes, and run the program a few times
+to get a sense of how the if statement operates. 
+
+import java.util.Scanner;
+
+public class IfStatementIntroduction {
+    public static void main( String[] args ) {
+        Scanner keyboard = new Scanner(System.in);
+        boolean boolA, boolB;
+        double x, y;
+        
+        System.out.print( "Enter the first number: " );
+        x = keyboard.nextDouble();
+        System.out.print( "Enter the second number: " );
+        y = keyboard.nextDouble();
+        
+        if (x == y) {
+            System.out.println( x + " and " + y + " are equal." );
+        } else if (x > y) {
+            System.out.println( x + " is greater than " + y );
+        } else {
+            System.out.println( x + " is less than " + y );
+        }
+    }
+}
+
+
+What now?
+
+Run the code a few times to get a feel for how the program works.

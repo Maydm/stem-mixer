@@ -1,0 +1,22 @@
+You probably guessed, but now it's time to practice
+decrementing values.
+
+Type out the program below:
+
+public class DecrementExperiment {
+    public static void main(String[] args) {
+        int x, y;
+        x = 10;
+        System.out.println("x = " + x);
+        x = x - 1;
+        System.out.println("x = x - 1 returns " + x);
+        y = 10;
+        System.out.println("y = " + y);
+        y--;
+        System.out.println("y-- returns " + y);
+    }
+}
+
+What now?
+
+Add your own decrementing statement.

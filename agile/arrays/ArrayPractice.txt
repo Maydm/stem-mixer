@@ -1,0 +1,24 @@
+Practice a little more with arrays. Retype the following program.
+
+public class ArrayPractice {
+    public static void main(String[] args) {
+        // creates array of integers
+        int[] anArrayOfIntegers;
+        // reserves memory for 10 integers
+        anArrayOfIntegers = new int[10];
+        // Instantiate first element (element #0)
+        anArrayOfIntegers[0] = 50;
+        // Initialize second element (element #1)
+        anArrayOfIntegers[1] = 100;
+        // So on and so forth
+        anArrayOfIntegers[2] = 150;
+    }
+}
+
+What now?
+
+Add another integer value to the array called "anArrayOfIntegers"
+
+Create an array of doubles and give it a few values.
+
+Create an array of strings and give it a few values.

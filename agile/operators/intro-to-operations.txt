@@ -1,0 +1,79 @@
+Have you ever thought about why we call computers computers? Or who or what
+were the first computers?
+
+It may surprise you to know that the first "computers" referred to offices of 
+female mathmeticians who ran and verified calculations for engineers. 
+
+The movie "Hidden Figures" revolves around the story of three such "calculators."
+
+As you may have guessed by now, we call computers "computers", because one of the 
+first things they were built for was to quickly calculate complex mathematical
+operations.
+
+As such, just about any robust program will be able to complete mathematical operations.
+
+Let's practice adding, subtracting, multiplying, dividing and playing with something 
+called modulus. 
+
+This is a big program. Pay close attention to capitalization and spelling as well
+as proper parenthesis placement. 
+
+public class FirstOperations {
+    public static void main( String[] args ) {
+        
+        System.out.println( "Let's add..." );
+        System.out.println( "4 + 4 = " + (4 + 4) );
+        System.out.println( "16 + 16 = " + (16 + 16) );
+        System.out.println( "9.90 + 18.55 " + (9.90 + 18.55) );
+        
+        System.out.println( "Cool, let's subtract..." );
+        System.out.println( "18 - 10 = " + (18 - 10) );
+        System.out.println( "10 - 18 = " + (10 - 18) );
+        System.out.println( "5.5 - 3.9 = " + (5.5 - 3.9) );
+        
+        System.out.println( "Time to multiply!" );
+        System.out.println( "We multiply using the \"*\" (asterisk) symbol" );
+        System.out.println( "If you try to multiply using the letter \"x\" then the compiler will throw an error." );
+        System.out.println( "10 x 10 = " + 10 * 10 );
+        System.out.println( "100 * 100 = " + 100 * 100 );
+        System.out.println( "25 * 25 = " + 25 * 25 );
+        System.out.println( "3 * .33 = " + 3 * .33 );
+        System.out.println( "Cool! Now my computer can do my times tables for me!");
+        
+        System.out.println( "Let's practice division. We divide using the \"\\\" (backspace) symbol" );
+        System.out.println( "1000 / 100 = " + (1000 / 100) );
+        System.out.println( "3 / 4 = " + (3 / 4) );
+        System.out.println( "3.0 / 4.0 = " + (3.0 / 4.0) );
+        System.out.println( "1 / 3 = " + (1 / 3) );
+        System.out.println( "1.0 / 3.0 = " + (1.0 / 3.0) );
+        
+        System.out.println( "Now for something you may not be familiar with, Modulus." );
+        System.out.println( "Modulus returns the remainder of a division problem." );
+        System.out.println( "Modulus uses the \"%\" symbol in Java and many other programming languages." );
+        System.out.println( "6 % 3 = " + 6 % 3 );
+        System.out.println( "6 % 2 = " + 6 % 2 );
+        System.out.println( "6 % 4 = " + 6 % 4 );
+        System.out.println( "6 % 5 = " + 6 % 5 );
+        System.out.println( "6 % 6 = " + 6 % 6 );
+        
+    }
+}
+
+What now?
+
+Once your code runs play with your own numbers. See what operations you can 
+task the computer to run. You may notice that some answers return odd decimals. 
+For example, 9.90 + 18.55 returns 28.450000000000003. This is because doubles are
+only so precise. We don't really need to concern ourselves with this level 
+(or lack of) precision at the moment.
+
+You've probably noticed by now that we use the "+" symbols between strings and 
+when adding. That's because "+" is used to concatenate strings together. 
+Concatenate is a fancy word programmers like to use that means to combine together.
+You might think of concatenation as a way to tie two or more strings together.
+
+In the addition problems, if we don't wrap our numbers inside parenthesis then 
+the program thinks we want to concatenate instead of add! Try it. Watch
+9.90 + 18.55 become 9.918.55 if you remove the parenthesis.
+
+In the next lesson we'll combine our knowledge of variables with operations.

@@ -1,0 +1,26 @@
+Let's concatenate your name.
+
+Open a new file and type the following code.
+
+public class concatenateName {
+    public static void main(String[] args) {
+        String firstName = "ENTER_YOUR_NAME";
+        String lastName = "ENTER_YOUR_NAME";
+        String middleName = "ENTER_YOUR_NAME";
+        // If you have two last or middle names then add
+        // them as "middleName2" and "lastName2"
+        // Remember to add any new variables into the print statement.
+
+        String firstAndLastName = firstName + " " + lastName;
+        String fullName = firstName + " " + middleName + " " + lastName;
+
+        System.out.println("Most people know me as " + firstAndLastName + ".");
+        System.out.println("However, my full name is " + fullName + ".");
+    }
+}
+
+What's next?
+
+We'll create a new Java file using this codebase to ask
+users for their names using the Scanner class. Open
+"concatenate-user-input-name.txt" to get started.

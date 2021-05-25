@@ -1,0 +1,25 @@
+Loops can do more than numbers. We can also use Loops
+to iterate through non-numerical values, such as the
+alphabet.
+
+Create a new java file and give it a try.
+
+class AlphabetLoop {
+    public static void main( String args[] ) {
+        char ch = 'a';
+
+        while (ch <= 'z') {
+            System.out.print(ch + " ");
+            ch++;
+        }
+        System.out.println(" ");
+    }
+}
+
+What now?
+
+1) Can you refactor (that means to revise) this program 
+   such that it begins at the character 'z' and decrements
+   down to the character 'a'?
+
+   

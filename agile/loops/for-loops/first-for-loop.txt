@@ -1,0 +1,42 @@
+Let's begin with a very simple loop.
+We'll create a for loop.
+A for loop takes three conditions:
+1) A starting value
+2) A condition to operate under
+3) A value to increment or decrement by
+
+Often, but not always, a for loop will begin at a
+value of 1, will count up to or down to a specified value and
+increment or decrement by 1. We use a "++" to increment by 
+one value at a time or "--" to decrement down one value at a time.
+
+This loop starts at one, loops until the count variable
+is less than or equal to 10 and increments by one integer
+at a time. In each iteration, the loop will print the value
+of the variable "count"
+
+Type the code below in a new java program:
+
+public class CountTenLoop {
+    public static void main( String[] args ) {
+        int count;
+        
+        for (count =1; count <= 10; count++) {
+            System.out.println( "The count is: " + count );
+        }
+    }
+}
+
+Now what?
+
+1) Change the count variable to equal a number more than 10.
+   What happens when you run the code?
+
+2) Change the second condition in the for loop. Change the 
+   operation. Try using the greater than symbol or "==" for 
+   equal to. 
+   Can you make an infinite loop? (Note, you don't usualy
+   want to write an infinite loop. If you do though, Try
+   ctrl + c to stop the program.)
+
+3) Change the third condition to increment by more or less than one.

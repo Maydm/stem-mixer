@@ -1,0 +1,23 @@
+Let's play with the methods toLowerCase() and toUpperCase().
+Create a new Java file and type out the program below then work through
+the What now exercises.
+
+public class CaseChanger {
+    public static void main(String[] args) {
+        String question = "WHY ARE YOU YELLING?";
+        String answer = "I'm not yelling";
+
+        System.out.println(question.toLowerCase());
+        System.out.println(answer.toUpperCase());
+        System.out.println(question); // Is this still lowercase or is it uppercase now?
+    }
+}
+
+What now?
+
+When you run the program is the third print statement in lowercase or all caps?
+What is the reason for the answer?
+
+Add a new String and print it as being all uppercase and all lowercase.
+
+How can we save the state of a string as all upper or lowercase? 

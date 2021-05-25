@@ -1,0 +1,63 @@
+Let's learn more about Booleans.
+
+A Boolean is a concept developed by English mathematician George Boole.
+It's a logical concept that states that a thing may be true or false. 
+A boolean only has those two options. Fairly simple, right!
+
+We'll make use of Booleans quite a bit in our programming so let's get
+some Boolean experience!
+
+Before we get into the code, let's review some operator symbols that you'll
+recognize from math classes. 
+
+Booleans often determine if a statement is true or false by comparing numerals 
+using less than, greater than, equal to, and not equal to.
+
+In Java we use the same mathematical comparisons.
+> means Greater than
+< means Less than
+== represents "is equal to" because a single equals sign means "is assigned to"
+
+We also have a few comparisons that combine comparisons and equals.
+>= means is greater than or equal to
+<= is less than or equals
+
+And we have a negative comparison:
+!= represents "is not equal to"
+
+Write out the code below and watch how a boolean type interacts with simple comparisons.
+
+
+import java.util.Scanner;
+
+public class BooleanExcercise {
+    public static void main( String[] args ) {
+        Scanner keyboard = new Scanner(System.in);
+        boolean boolA, boolB;
+        double x, y;
+        
+        System.out.print( "Enter any number: " );
+        x = keyboard.nextDouble();
+        System.out.print( "Enter another number: " );
+        y = keyboard.nextDouble();
+        
+        boolA = ( x <= y );
+        boolB = ( y == x );
+        
+        System.out.println( x + " is less than or equal to " + y + ": " + boolA );
+        System.out.println( y + " is equal to " + x + ": " + boolB );
+    }
+}
+
+What now?
+
+1) Change the boolA and boolB assignments so they make different comparisons.
+i.e. instead of boolA = (x <= y); you might decide that boolA = ( x > y );
+
+2) Create a new boolC boolean variable and a new double variable called "z" 
+and ask the user for a third number. Then assign boolC a new comparison using 
+x, y and/or z.
+i.e. boolC = ( z != x );
+
+3) Create a new System.out.println statement to give the user a third comparison,
+similar to the first two print statements.

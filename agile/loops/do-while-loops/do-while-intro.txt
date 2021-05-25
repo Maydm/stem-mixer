@@ -1,0 +1,27 @@
+This next program will use a do while loop.
+Do While loops are different than for loops because they
+run while a condition is met or unmet, whereas for loops
+iterate a predetermined amount of time. A Do While loop is 
+different than standard While loops because they will 
+always run at least one time.
+
+Let's practice by writing out a while loop.
+
+import java.util.Scanner;
+
+public class DoWhileIntro {
+    public static void main( String args[] ) {
+        Scanner keyboard = new Scanner(System.in);
+        char ch;
+
+        do {
+            System.out.print( "Press a key followed by ENTER: " );
+            ch = keyboard.next().charAt(0);
+        } while(ch != 'q');
+    }
+}
+
+What now?
+
+Can you change the loop so that it only runs while the user inputs
+'q'?

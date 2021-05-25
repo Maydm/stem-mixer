@@ -1,0 +1,21 @@
+
+
+import java.util.Scanner;
+
+public class FtoCeLooper {
+    public static void main( String[] args ) {
+        float fahrenheit, celsius, fiveNinths = (5F/9F);
+        int counter = 0;
+
+        for ( fahrenheit = -40; fahrenheit <= 212; fahrenheit++) {
+            celsius = ((fahrenheit - 32) * fiveNinths); // convert to celsius
+            System.out.println(celsius + " celsius is " + fahrenheit + " fahrenheit.");
+            counter++;
+
+            if ( counter == 10 ) {
+                System.out.println();
+                counter = 0; // reset the counter
+            }
+        }
+    }
+}

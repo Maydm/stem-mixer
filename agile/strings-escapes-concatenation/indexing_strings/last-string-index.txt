@@ -1,0 +1,21 @@
+Let's reproduce our earlier code, but instead of using the indexOf()
+method, we'll use lastIndexOf().
+
+public class LastIndexOfString {
+    public static void main (String[] args) {
+        String statement = "Maydm is Made By Them, My Madym is Made By Me! I'm learning to code in Java!";
+        int position = statement.lastIndexOf("Maydm");
+        int location = statement.lastIndexOf("Made");
+
+        System.out.println("Position of Maydm: " + position); // returns position of last occurance of Maydm
+        System.out.println("Position of Made: " + location); // returns first position (the letter "M") of last iteration of Made
+        System.out.println("the last '!' is at position " + statement.lastIndexOf("!"));
+        System.out.println(statement.lastIndexOf("maydm")); // Are you surprised by the returned value?
+    }
+}
+
+What now?
+
+Does lastIndexOf return the first letter in the last iteration of Maydm or 
+the last letter in the last iteration of Maydm? Count the characters to find out.
+Remember to begin at zero and not one.

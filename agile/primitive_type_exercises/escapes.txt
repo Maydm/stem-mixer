@@ -1,0 +1,71 @@
+You may have noticed in some of the lessons that we use the backslash before certain
+character or symbols. Have you wondered what they are for?
+
+These are escape sequences and can help us use certain characters as strings
+when Java would otherwise recognize the character as part of the programming language.
+
+Let's play with escape sequences for a better understanding.
+
+The most commonly used escape sequences are for comments.
+
+Two forwardslashes "//" creates a comment which the program will ignore.
+
+// Java won't read this!
+
+/* If we need to write a longer comment then we open with the "/*"
+   forwardslash and asterisk. Then you can write a comment as
+   long as you need it to be. Close the comment with a
+   asterisk followed by a forwardslash. */
+   
+We can also use escape sequences to tab, create a new line, and display a backslash or
+double quotation mark in a string. There are others but these are the most common. 
+Let's play with escape sequences.
+
+public class Escapes {
+    public static void main( String[] args ) {
+        // Remember this is a comment. Use this to explain difficult bits of code
+        /* This is a multi
+           line comment
+        */
+        System.out.print( "\tI am a tab. \t I have tabbed again." );
+        System.out.print( "\nLet's\nStart\nA\nNew\nLine\nFor\nEvery\nWord!" );
+        System.out.println( "Escape quotations: \" \n Escape backslash \\ " );
+        System.out.println( "Let's see what happens: \\\\ " );
+        System.out.println( "What if I // write a comment in a string?" );
+        System.out.println( "hmm /* How about this? */\n\n-------------" );
+        
+        System.out.println( "Concatonation" + "fun" );
+        
+        String con, cat, on, ation;
+        
+        con = "con";
+        cat = "cat";
+        on = "on";
+        ation = "ation";
+        
+        System.out.print( "You ready for this? When I say " + con );
+        System.out.println(" you say " + cat );
+        System.out.print( con );
+        System.out.println( cat );
+        System.out.print( con );
+        System.out.println( cat );
+        System.out.println( "Now when I say " + on + " you say " + ation );
+        System.out.print( on );
+        System.out.println( ation );
+        System.out.println( "Now put it all together!" );
+        System.out.println( con + cat + on + ation );
+    }
+}
+
+Great work! 
+
+What now?
+
+1) Play with the print and println statements. What happens if you flip the
+usage of print and println so the current print statements become println and 
+println statements become print statements?
+
+2) Google "Java escape sequences" and add an escape sequence that looks interesting
+or confusing to you.
+
+When might you want to use escape sequences in your programs?

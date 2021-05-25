@@ -1,0 +1,30 @@
+
+ Create a file called "var-exercise-1.java" and enter the following code
+ 
+ /* 
+  Let's play with variables
+ /*
+ 
+class VarExerciseOne {
+    public static void main (String args[]) {
+        int integerVariable;
+        double doubleVariable;
+        String stringVariable;
+        
+        integerVariable = 256;
+        doubleVariable = 3.1415;
+        stringVariable = "I'm creating variables.";
+         
+        System.out.print("My favorite integer is ");
+        System.out.println(integerVariable);
+        System.out.print("A popular decimal is pi. It starts as ");
+        System.out.println(doubleVariable);
+        System.out.println(stringVariable);
+    }
+}
+
+What now?
+
+1) Write your own variables and print them with System.out.println or .print
+2) Experiment with different primitive types in your variables. How can you 
+break your progam?

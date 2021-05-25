@@ -1,0 +1,59 @@
+Let's write a help system. After all, programs are meant to make
+our life easier right! SO once we know how to code we can begin
+writing scripts and programs to do all sorts of things for us.
+For example, you can write a program to open your web browser to your
+favorite website, or a program to farm experience points in your 
+favorite video game. 
+
+But for starters, let's write a program that will help remind us of 
+proper Java syntax.
+
+Type out the code below in a new java file.
+
+class HelpSystem {
+    public static void main(String args[])
+        throws java.io.IOException {
+        char choice;
+
+        System.out.println("What would you like help on:");
+        System.out.println("   1. if");
+        System.out.println("   2. switch");
+        System.out.print("Choose one: ");
+
+        choice = (char) System.in.read();
+
+        switch(choice) {
+            case '1':
+                System.out.println("The if:\n");
+                System.out.println("if (condition) statement;");
+                System.out.println("else statement");
+                break;
+            case '2':
+                System.out.println("The switch:\n");
+                System.out.println("switch (expression) {");
+                System.out.println("  case constant:");
+                System.out.println("    statement sequence");
+                System.out.println("    break;");
+                System.out.println("  // ...");
+                System.out.println("}");
+                break;
+            default:
+                System.out.print("Selection not found.");
+        }
+    }
+}
+
+What now?
+
+1) Write a third case that explains the syntax for creating an array
+   or one of the other fundamental coding concepts that you've 
+   learned in the past few days.
+
+2) Go back to PrintSubjects.java and the "throws java.io.IOExeption {}"
+    statement so the user can have a choice in what subject area they'days
+    like to study. This will be a little challenging because you'll need
+    to move your block of code inside of the new curly brackets. Use the 
+    HelpSystem.java as a template.
+
+3) Go back to the subject matter nested switch program that you created 
+   and add the ability for a user to input their own choices.
