@@ -1,5 +1,5 @@
 
- Create a file called "var-exercise-1.java" and enter the following code
+ Create a file called "VarExerciseOne.java" and enter the following code
  
  /* 
   Let's play with variables
